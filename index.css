@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Landing Page */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/homepage.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .banner-content>h1{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+  }
+
+  /* Style for the buttons */
+  .button-container {
+    position: absolute;
+    bottom: 120px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px; /* Adjust font size as needed */
+    border-radius: 5px;
+  }
+
+
+
+/* Landing Page */
+
+
+/* Mission Section */
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    padding: 2em;
+    
+}
+
+.mission-intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+.mission-head{
+    flex: 1;
+    justify-content: left;
+}
+.mission-head h1{
+    color: #0a1172;
+    margin-top: .5em;
+    font-weight: bold; 
+}
+.mission-head h6{
+    font-weight: 100;
+}
+.mission-message{
+    flex: 1;
+    justify-content: right;
+}
+
+.mission-message p{
+    text-align: right;
+ 
+}
+
+.mission-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    padding: 5em;
+    
+}
+
+.mission-images>img{
+    margin: .2em;
+}
+
+
+
+
+
+
+/* Mission Section */
+
+/* carousel cards */
+
+.intro-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin: 2em;
+}
+
+.intro-head>p{
+    text-align: center;
+    padding: .5em;
+    margin: .5em;
+}
+
+.intro-head>h1{
+    text-align: center;
+    padding: .5em;
+    margin: .5em;
+    color: #0a1172;
+    font-weight: bold;   
+}
+.intro-head h6{
+    font-weight: 100;
+}
+
+
+.img-wrapper{
+    max-width: 100%;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.carousel-inner{
+    padding: 1em;
+}
+
+.card{
+    margin: 0 .5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 18);
+}
+
+.carousel-control-prev .carousel-control-next{
+    width: 6vh;
+    height: 6vh;
+    background-color: #e1e1e1e1;
+    border: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev .carousel-control-next:hover{
+    opacity: 1;
+}
+
+@media screen and (min-width:576px){
+    .carousel-inner{
+        display: flex;
+    }
+
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+    .img-wrapper{
+        height: 23vw;
+    }
+    
+
+   
+}
+
+@media screen and (max-width: 1200px) {
+    .mission-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* carousel cards */
+
+/* @media */
+/* @media screen and (max-width: 1200px) {
+    
+    img{
+        max-width: 100%;
+    }
+    .mission-intro{
+        display: flex;
+        flex-direction: column;
+    }
+    .mission-head h1{
+        font-weight: bold;
+        text-align: center;
+    }
+    .mission-head h6{
+        font-weight: 100;
+        text-align: center;
+    }
+    .mission-message{
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .mission-message p{
+        text-align: center;
+     
+    }
+} */
