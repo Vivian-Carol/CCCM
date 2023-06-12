@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 
@@ -65,62 +66,145 @@
 
 /* Mission Section */
 
-.mission{
+.mission {
     display: flex;
     flex-direction: column;
     margin: 2em;
     padding: 2em;
-    
-}
+  }
 
-.mission-intro{
+  .mission-intro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin: 1em;
-    padding-left: 6em;
-    padding-right: 6em;
-}
+    padding: 0 1em;
+  }
 
-.mission-head{
-    flex: 1;
-    justify-content: left;
-}
-.mission-head h1{
+  .mission-head {
+    text-align: center;
+  }
+
+  .mission-head h1 {
     color: #0a1172;
-    margin-top: .5em;
-    font-weight: bold; 
-}
-.mission-head h6{
+    margin-top: 0.5em;
+    font-weight: bold;
+  }
+
+  .mission-head h6 {
     font-weight: 100;
-}
-.mission-message{
-    flex: 1;
-    justify-content: right;
-}
+  }
 
-.mission-message p{
-    text-align: right;
- 
-}
+  .mission-message {
+    text-align: center;
+  }
 
-.mission-images{
+  .mission-message p {
+    margin: 0;
+  }
+
+  /* Responsive Styles */
+
+  @media (min-width: 768px) {
+    .mission-intro {
+      flex-direction: row;
+      padding-left: 6em;
+      padding-right: 6em;
+    }
+
+    .mission-head {
+      flex: 1;
+      text-align: left;
+    }
+
+    .mission-message {
+      flex: 1;
+      text-align: right;
+    }
+  }
+
+.image-container{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    height: 350px;
+    height: 400px;
     width: 100%;
-    padding: 5em;
+    align-items: center;
+    padding: 8em 4em 8em 4em;
+
+}
+
+.card1{
+    flex: 1 1 25%;
+    height: 400px;
+    width: 400px;
+    margin: .5em;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 6px;
+    
+
+
+}
+.card1>img{
+    height: 400px;
+    width: 350px;
+    transition: .5s;
+    object-fit: cover;
     
 }
 
-.mission-images>img{
-    margin: .2em;
+.card1 .intro{
+    /* height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 240px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;  */
+    height: 70px;
+    width: 350px;
+    background: rgb(27, 27, 27, .5);
+    
+
 }
 
+/* .card1 .intro>h4{
+    margin: 10px;
+    font-size: 40px
+}
 
+.card1 .intro>p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
 
+.intro>span{
+    font-weight: bold;
+
+} */
+
+.card1:hover{
+    cursor: pointer;
+}
+
+/* .card1:hover .intro{
+    height: 220px;
+    bottom: 240px;
+    background: black;
+} */
+
+/* .card1:hover p{
+    opacity: 1;
+    visibility: visible;
+} */
+
+.card1:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
 
 
 
@@ -133,7 +217,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding: 4em;
     margin: 2em;
 }
 
@@ -188,7 +272,7 @@ img{
     opacity: 1;
 }
 
-@media screen and (min-width:576px){
+@media screen and (min-width:576px ){
     .carousel-inner{
         display: flex;
     }
@@ -206,13 +290,6 @@ img{
    
 }
 
-@media screen and (max-width: 1200px) {
-    .mission-images{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
 
 /* carousel cards */
 

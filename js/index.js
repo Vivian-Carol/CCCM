@@ -16,7 +16,7 @@ if(window.matchMedia("(min-width:576px)").matches){
         if(scrollPosition < (carouselwidth - (cardWidth * 4))){
             console.log('next');
             scrollPosition = scrollPosition + cardWidth;
-            $('.carousel-inner').animate({scrollLeft: scrollPosition},200);
+            $('.carousel-inner').animate({scrollLeft: scrollPosition},100);
         }
     });
 
@@ -24,7 +24,7 @@ if(window.matchMedia("(min-width:576px)").matches){
         if(scrollPosition > 0){
             console.log('prev');
             scrollPosition = scrollPosition + cardWidth;
-            $('.carousel-inner').animate({scrollLeft: scrollPosition},200);
+            $('.carousel-inner').animate({scrollLeft: scrollPosition},100);
         }
     });
 } else{
